@@ -258,6 +258,7 @@ h2 {
 .section-4 {
     margin: 0 280px 200px;
     display: flex;
+    justify-content: space-between;
 }
 
 .paragraph-12 {
