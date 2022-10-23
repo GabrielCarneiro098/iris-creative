@@ -47,3 +47,16 @@
 }
 
 @media (max-width: 700px) {}
+
+@media (max-width: 600px) {
+    header {flex-direction: column;}
+    .creative-office {width: 100px;}
+    .design-matters {margin-left: 50px;}
+    nav {margin-top: 20px;}
+}
+
+@media (max-width: 520px) {
+    .paragraph-2 {width: 400px;}
+    .paragraph-12 { font-size: 35px;}
+    .paragraph-13 { font-size: 20px;}
+}
