@@ -64,6 +64,7 @@
 @media (max-width: 400px) {
     .section-2 {margin-left: 40px; margin-right: 40px;}
     .section-3 {margin: 0 40px}
+    .paragraph-1 {width: 300px;}
     .paragraph-4 {font-size: 12px;}
     .paragraph-5 {font-size: 12px;}
     .paragraph-6 {font-size: 12px;}
@@ -72,4 +73,5 @@
     .paragraph-9 {font-size: 12px;}
     .paragraph-12 { font-size: 30px;}
     .paragraph-13 { font-size: 15px;}
+    .instagram-name { font-size: 38px;}
 }
