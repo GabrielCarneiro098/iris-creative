@@ -20,6 +20,7 @@ nav {
 
 .creative-office{
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 /* HEADER */
@@ -73,6 +74,7 @@ a :hover {
 
 .filtro :hover {
     filter: grayscale(0);
+    border-radius: 100px;
 }
 
 .paragraph-2 {
