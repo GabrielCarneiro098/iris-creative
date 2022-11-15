@@ -70,6 +70,7 @@ a :hover {
     height: 500px;
     filter: grayscale(90%);
     transition: .8s;
+    border-radius: 10px;
 }
 
 .filtro :hover {
@@ -92,7 +93,6 @@ button {
     background-color: black;
     color: white;
     transition: .3s ease all; 
-    
 }
 
 button:hover {
