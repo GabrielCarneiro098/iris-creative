@@ -7,7 +7,7 @@ sr.reveal('.paragraph-2', {duration: 1500});
 sr.reveal('.this-project', {duration: 1500});
 sr.reveal('.full-portfolio', {duration: 1500});
 sr.reveal('.paragraph-3', {duration: 1500});
-sr.reveal('.section-3', {duration: 1500});
+sr.reveal('.our-services', {duration: 1500});
 sr.reveal('.section-4', {duration: 1500});
 sr.reveal('.article-1', {duration: 1500});
 sr.reveal('.article-2', {duration: 1500});
