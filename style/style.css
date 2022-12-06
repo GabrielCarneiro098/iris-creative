@@ -304,6 +304,16 @@ footer {
     margin: 50px 0;
 }
 
+#contact a {
+    display: flex;
+    justify-content: center;
+}
+
+#contact button {
+    margin-top: 50px;
+    padding: 20px;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     background-color: rgb(200, 200, 200);
@@ -318,6 +328,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.section-1, .section-2, .section-3, .section-4 {
+.section-1, .section-2, .section-3{
     visibility: hidden;
 }
