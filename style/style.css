@@ -264,7 +264,7 @@ h2 {
 .section-4 {
     margin: 0 280px 200px;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .paragraph-12 {
@@ -302,6 +302,11 @@ footer {
     margin: 100px 0 50px;
 }
 
+h6 {
+    display: none;
+    font-size: 20px;
+}
+
 /* FORMULARIO */
 
 .formulario {
@@ -335,8 +340,4 @@ html {
 
 .section-1, .section-2, .section-3{
     visibility: hidden;
-}
-
-h1 {
-    text-transform: capitalize;
 }
