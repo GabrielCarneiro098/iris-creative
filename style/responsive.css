@@ -1,8 +1,7 @@
 
 @media (max-width: 1715px) {
-    .section-4{margin-bottom: 100px;flex-direction: column; justify-content: center; align-items: center;}
+    .section-4{flex-direction: column; justify-content: center; align-items: center;}
     .email-us {margin-bottom: 2px;}
-    .section-4 {font-size: 100%;}
     .paragraph-12 {font-size: 150%;}
     .paragraph-13 {font-size: 100%;}
 
