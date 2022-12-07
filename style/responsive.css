@@ -65,7 +65,7 @@
     .paragraph-2 {width: 320px;}
     .paragraph-3 {font-size: 18px;}
     .instagram-name { font-size: 38px;}
-    .section-3 p {font-size: 16px; text-indent: 0; padding-top: 5px; padding-bottom: 5px;}
+    .section-3 p {font-size: 16px; text-indent: 0; padding-top: 5px; padding-bottom: 5px; text-align: justify;}
     .section-3 svg {display: none;}
     h6 {display: block;}
 
