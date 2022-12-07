@@ -2,7 +2,7 @@ window.sr = ScrollReveal({reset: true});
 
 sr.reveal('.design-matters', {duration: 1500});
 sr.reveal('.paragraph-1', {duration: 1500});
-sr.reveal('.filtro', {duration: 1500});
+sr.reveal('.imagem-1', {duration: 1500});
 sr.reveal('.paragraph-2', {duration: 1500});
 sr.reveal('.this-project', {duration: 1500});
 sr.reveal('.full-portfolio', {duration: 1500});
