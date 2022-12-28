@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    padding: 0 250px;
+}
+
+p{
+    font-size: 23px;
+    text-align: justify;
+    
+}
+
+section {
+    height: 100vh;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin: 10vh 10vh;
+}
+
+#logo h6 {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bolder;
+}
+
+.painel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    color: #54504a;
+    gap: 30px;
+}
+
+img {
+    width: 120%;
+}
+
+.photos img {
+    width: 25rem;
+    margin-right: 100px;
+}
+
+.test {
+    background-color: #54504a;
+    height: 175px;
+    width: 100px;
+}
+
+.duo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo3 {
+    border-bottom: 30px;
+}
+
+.imagem {
+    width: 20%;
+    height: 20%;
+    border-radius: 100px;
+}
+
+.boll-wrap {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: #f8fbff;
+    width: 300px;
+    height: 400px;
+}
+
+.last-painel {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.cards {
+    display: flex;
+    gap: 150px;
+}
+
+.light-brow {
+    width: 100%;
+    height: 45%;
+    background-color: #beb5a9;
+}
+
+.brow {
+    width: 100%;
+    height: 45%;
+    background-color: #817a6e;
+}
+
+.light-brow, .brow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: #ffff;
+}
+
+.light-brow p, .brow p {
+    font-size: 1,5em;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+h5 {
+    margin-left: 15px;
+    font-size: 3rem;
+}
+
+.light-color {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.light-color p {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.light-color i {
+    margin-right: 10px;
+    color: #99b83c;
+}
+
+.light-color .fa-circle-xmark {
+    color: #ff3b3b;
+}
+
+.light-color button {
+    background-color: #54504a;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.template i {
+    color: #f2cc5d;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p:last-child {
+    font-size: 12.5px;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+}
+
+.fa-arrow-left:hover {
+    cursor: pointer;
+}
