@@ -186,13 +186,3 @@ footer {
 footer p:last-child {
     font-size: 12.5px;
 }
-
-.fa-arrow-left {
-    position: absolute;
-    top: 50px;
-    left: 140px;
-}
-
-.fa-arrow-left:hover {
-    cursor: pointer;
-}
