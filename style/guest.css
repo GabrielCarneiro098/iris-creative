@@ -193,17 +193,18 @@ footer p:last-child {
 @media (max-width:500px) {
     body {padding: 0 50px;}
     h1 {font-size: 3rem;}
+
     .painel {flex-direction: column-reverse;}
     .painel, img:nth-child(1) {width: 100%;}
-    .painel:nth-child(1) {flex-direction: column;}
-    .imagem:nth-child(1) {display: none;}
-    .imagem:nth-child(6){width: 100px; padding-left: 100px; display: flex;}
-    section:nth-child(3) {margin-bottom: 150px;}
-    .template div {display: flex; align-items: center;}
-    .photos {width: 75%; height: 400px;}
-    h1 {font-size: 2rem;}
-    p {font-size: 20px;}
 
+    .imagem:nth-child(1) {display: none;}
+    .imagem:nth-child(6){width: 60px; padding-left: 20px; display: flex;}
+
+    .template div {display: flex; align-items: center;}
+    .photos img {margin: 20px 0;}
+    
+    h1 {font-size: 2rem;}
+    p {font-size: 18px; margin-bottom: 20px;}
 
     .cards {flex-direction: column; gap: 100px;}
 
