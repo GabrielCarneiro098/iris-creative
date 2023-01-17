@@ -1,4 +1,4 @@
-
+/* RESPONSIVE INDEX */
 @media (max-width: 1715px) {
     .section-4{flex-direction: column; justify-content: center; align-items: center;}
     .email-us {margin-bottom: 2px;}
