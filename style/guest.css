@@ -197,13 +197,14 @@ footer p:last-child {
 /* RESPONSIVENESS */
 
 @media (max-width:500px) {
-    body {padding: 0 50px;}
+    body {padding: 0 15px;}
     h1 {font-size: 3rem;}
 
     .painel {flex-direction: column-reverse; gap: 20px;}
     .painel-2, .painel-3 {flex-direction: column;}
     .painel-3 img {display: none;}
     .painel-3 {margin-top: 200px;}
+    .painel-3 div {align-items: center;}
 
     img:nth-child(1) {width: 100%;}
 
