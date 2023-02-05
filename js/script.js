@@ -1,3 +1,5 @@
+// Index
+
 window.sr = ScrollReveal({reset: true});
 
 sr.reveal('.design-matters', {duration: 1500});
@@ -16,3 +18,7 @@ sr.reveal('.article-3', {duration: 1500});
 sr.reveal('.article-4', {duration: 1500});
 
 sr.reveal('.instagram', {duration: 1500});
+
+// More guests Program
+
+sr.reveal('section', {duration: 1500});
