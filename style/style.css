@@ -8,91 +8,171 @@
     text-align: start;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: clip;
+    width: 100%;
+    min-width: 0;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 nav {
     list-style: none;
-    display: flex;
 }
 
-.logo{
+.logo-link {
     display: flex;
     align-items: center;
+    min-width: 0;
+    z-index: 110;
 }
 
-.creative-office{
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.creative-office {
     padding-left: 10px;
     padding-top: 10px;
 }
 
 /* HEADER */
-header {
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    padding: 1.25rem clamp(1.25rem, 4vw, 6rem);
+}
+
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30vh;
-    border-bottom: 1px solid;
+    gap: 1rem;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
-header li {
-    margin: 0px 15px;
+.menu-toggle,
+.menu-close,
+.nav-overlay,
+.main-nav__header {
+    display: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 1.5rem;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+    opacity: 1;
+}
+
+body.menu-open {
+    overflow: hidden;
 }
 
 a {
     color: black;
     text-decoration: none;
     cursor: pointer;
-    opacity: 0.9;    
+    opacity: 0.9;
 }
 
-a :hover {
+a:hover {
     opacity: 1;
 }
 
-
 /* FIRST SECTION */
 .section-1 {
-    display: flex ;
-    justify-content: space-around;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 6rem);
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 .design-matters {
-    margin: 250px 0 0px 0px;
+    margin: clamp(2rem, 8vw, 8rem) 0 0;
+    flex: 1 1 18rem;
+    max-width: 30rem;
+    min-width: 0;
 }
 
-.paragraph-1{
-    margin: 64px 0;
-    width: 340px;
-    font-size: 18px;
+.paragraph-1 {
+    margin: clamp(2rem, 4vw, 4rem) 0;
+    max-width: 21.25rem;
+    width: 100%;
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
 }
 
 .imagem-1 {
-    height: 500px;
+    max-height: 31.25rem;
+    width: 100%;
+    object-fit: cover;
     filter: grayscale(90%);
-    transition: .8s;
+    transition: 0.8s;
     border-radius: 10px;
 }
 
-.filtro :hover {
+.filtro:hover .imagem-1 {
     filter: grayscale(0);
     border-radius: 100px;
 }
 
 .paragraph-2 {
-    margin: 40px 0px;
-    font-size: 18px;
-    width: 450px;
+    margin: 2.5rem 0;
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
+    max-width: 28.125rem;
+    width: 100%;
 }
 
 button {
-    border: 100px;
-    border-color: blue;
+    border: none;
     border-radius: 15px;
-    padding: 10px;
+    padding: 0.625rem 1.25rem;
     cursor: pointer;
     background-color: black;
     color: white;
-    transition: .3s ease all; 
+    transition: 0.3s ease all;
+    white-space: normal;
+    max-width: 100%;
 }
 
 button:hover {
@@ -100,218 +180,255 @@ button:hover {
     color: white;
 }
 
+.menu-toggle,
+.menu-close {
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.menu-toggle:hover,
+.menu-close:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 .this-project {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .full-portfolio {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 18rem;
+    max-width: 32.5rem;
+    min-width: 0;
 }
 
 .portfolio-texto {
-    margin-left: 20px;
+    margin-left: 1.25rem;
+    width: 100%;
+    min-width: 0;
 }
 
 /* SECTION TWO */
 .section-2 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    margin:250px 150px ;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin: clamp(4rem, 12vw, 12rem) auto;
+    padding: 0 clamp(1.25rem, 4vw, 6rem);
+    max-width: 75rem;
 }
 
 .paragraph-3 {
-    margin-top: 100px;
-    width: 650px;
-    font-size: 30px;
+    margin-top: 0;
+    max-width: 40.625rem;
+    width: 100%;
+    font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+    flex: 1 1 18rem;
+    min-width: 0;
 }
 
+.fade-born {
+    flex: 0 1 auto;
+    min-width: 0;
+}
 
 /* SECTION THREE */
-
 .section-3 {
-    margin: 300px 280px 100px;
+    margin: clamp(4rem, 12vw, 12rem) auto;
+    padding: 0 clamp(1.25rem, 4vw, 6rem);
+    max-width: 75rem;
 }
 
 h2 {
-    font-family: 'bebas neue';
-    font-size: 60px;
-    padding-bottom: 72px;
+    font-family: 'bebas neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 3.75rem);
+    padding-bottom: clamp(2rem, 4vw, 4.5rem);
 }
 
-.brand-identity {
-    position: absolute;
-    margin-top: 80px;
+.our-services {
+    position: static;
 }
 
-.article-1 {
+.brand-identity,
+.Website-building,
+.naming-projects,
+.content-creation {
+    position: static;
+    display: block;
+    margin: 0 0 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.article-1,
+.article-2,
+.article-3,
+.article-4 {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    margin: clamp(3rem, 6vw, 6.25rem) 0;
 }
 
-.imagem-4 {
-    width: 20%;
-    height: 20%;
-    margin-left: 100px;
+.article-1 .brand-identity {
+    flex: 0 0 100%;
 }
 
-.paragraph-4 {
-    padding: 25px 0 10px;
-    text-indent: 34px;
+.article-1 .texto-1,
+.article-2 .texto-2,
+.article-3 .texto-3,
+.article-4 .texto-4 {
+    flex: 1 1 16rem;
+    min-width: 0;
 }
 
-.texto-1 {
+.article-1 .imagem-4,
+.article-2 .imagem-5,
+.article-3 .imagem-6,
+.article-4 .imagem-7 {
+    flex: 0 1 12.5rem;
     width: 100%;
-    margin-top: 80px;
-    font-size: 18px;
-}
-
-.article-2 {
-    display: flex;
-    margin: 100px 0;
-}
-
-
-.imagem-5 {
-    width: 20%;
-    height: 20%;
-    margin-right: 80px;
-    
-}
-
-.Website-building {
-    position: absolute;
-}
-
-.paragraph-6 {
-    font-size: 18px;
-    padding: 25px 0 10px;
-    text-indent: 56px;
-}
-
-.paragraph-7 {
-    font-size: 18px;
-}
-
-.texto-2 {
-    margin-top: 90px;
-}
-
-.article-3 {
-    display: flex ;
-    margin: 200px 0;
-}
-
-.texto-3 {
-    margin-top: 90px;
+    max-width: 13.75rem;
+    height: auto;
+    margin: 0;
+    align-self: center;
 }
 
 .imagem-6 {
     order: 2;
-    margin-left: 100px;
-    width: 20%;
-    height: 20%;
 }
 
-.naming-projects {
-    position: absolute;
+.paragraph-4,
+.paragraph-6,
+.paragraph-8,
+.paragraph-10 {
+    padding: 1.5625rem 0 0.625rem;
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
+}
+
+.paragraph-5,
+.paragraph-7,
+.paragraph-9,
+.paragraph-11 {
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
+}
+
+.texto-1,
+.texto-2,
+.texto-3,
+.texto-4 {
+    width: 100%;
+    margin-top: 0;
+    min-width: 0;
+}
+
+.paragraph-4 {
+    text-indent: 2.125rem;
+}
+
+.paragraph-6 {
+    text-indent: 3.5rem;
 }
 
 .paragraph-8 {
-    font-size: 18px;
-    padding: 25px 0 10px;
-    text-indent: 40px;
-}
-
-.paragraph-9 {
-    font-size: 18px;
-}
-
-.article-4 {
-    display: flex;
-    margin-top: 200px;
-}
-
-.imagem-7 {
-    margin-right: 90px;
-    width: 20%;
-    height: 20%;
-    margin-bottom: 200px;
-}
-
-.texto-4 {
-    margin-top: 80px;
-}
-
-.content-creation {
-    position: absolute;
+    text-indent: 2.5rem;
 }
 
 .paragraph-10 {
-    font-size: 18px;
-    padding: 25px 0 10px;
-    text-indent: 42px;
+    text-indent: 2.625rem;
 }
-
-.paragraph-11 {
-    font-size: 18px;
-}
-
 
 /* SECTION FOUR */
 .section-4 {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: clamp(3rem, 8vw, 6.25rem);
+    padding: 0 clamp(1.25rem, 4vw, 6rem);
+}
+
+.email-us {
+    text-align: center;
+    max-width: 40rem;
 }
 
 .paragraph-12 {
-    font-size: 45px;
-    font-family: 'playfair display';
+    font-size: clamp(1.75rem, 4vw, 2.8125rem);
+    font-family: 'playfair display', serif;
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .paragraph-13 {
-    font-size: 30px;
+    font-size: clamp(1.25rem, 2.5vw, 1.875rem);
     font-style: italic;
-    font-family: 'playfair display';
+    font-family: 'playfair display', serif;
+}
+
+.section-instagram {
+    padding: 0 clamp(1.25rem, 4vw, 6rem);
+    max-width: 90rem;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .owl-carousel {
-    margin: 20px 0px;
+    margin: 1.25rem 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .instagram {
-    margin-bottom: 100px;
+    margin-bottom: clamp(3rem, 8vw, 6.25rem);
     justify-content: center;
     display: flex;
 }
 
 .instagram-name {
-    font-size: 43px;
-    font-family: 'playfair display';
+    font-size: clamp(1.75rem, 4vw, 2.6875rem);
+    font-family: 'playfair display', serif;
+    text-align: center;
+    word-break: break-word;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 50px;
+    margin: clamp(3rem, 8vw, 6.25rem) 0 clamp(1.5rem, 4vw, 3.125rem);
+    padding: 0 clamp(1.25rem, 4vw, 6rem);
 }
 
 h6 {
     display: none;
-    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 /* FORMULARIO */
-
 .formulario {
     display: flex;
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 
 #contact a {
@@ -320,8 +437,8 @@ h6 {
 }
 
 #contact button {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 3.125rem;
+    padding: 1.25rem;
 }
 
 ::-webkit-scrollbar {
@@ -334,10 +451,10 @@ h6 {
     border-radius: 15px;
 }
 
-html {
-    scroll-behavior: smooth;
+.paragraph-1 span {
+    font-size: 1.1em;
 }
 
-.section-2, .section-3{
-    visibility: hidden;
+.instagram-name span {
+    font-size: inherit;
 }

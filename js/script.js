@@ -1,4 +1,67 @@
-// Index
+// Index — menu lateral mobile
+
+(function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuClose = document.querySelector('.menu-close');
+    const mainNav = document.querySelector('.main-nav');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const navLinks = document.querySelectorAll('.nav-list a');
+    const mobileMedia = window.matchMedia('(max-width: 56.25rem)');
+
+    if (!menuToggle || !mainNav || !navOverlay) {
+        return;
+    }
+
+    function openMenu() {
+        mainNav.classList.add('is-open');
+        navOverlay.classList.add('is-visible');
+        menuToggle.classList.add('is-active');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        navOverlay.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('menu-open');
+    }
+
+    function closeMenu() {
+        mainNav.classList.remove('is-open');
+        navOverlay.classList.remove('is-visible');
+        menuToggle.classList.remove('is-active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navOverlay.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('menu-open');
+    }
+
+    function toggleMenu() {
+        if (mainNav.classList.contains('is-open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+    menuClose.addEventListener('click', closeMenu);
+    navOverlay.addEventListener('click', closeMenu);
+
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            if (mobileMedia.matches) {
+                closeMenu();
+            }
+        });
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && mainNav.classList.contains('is-open')) {
+            closeMenu();
+        }
+    });
+
+    mobileMedia.addEventListener('change', function () {
+        if (!mobileMedia.matches) {
+            closeMenu();
+        }
+    });
+})();
 
 window.sr = ScrollReveal({reset: true});
 
